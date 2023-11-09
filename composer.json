@@ -1,0 +1,33 @@
+{
+    "name": "bondarde/php-maps",
+    "description": "Map stats rendering",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Alexander Bondar",
+            "email": "alexander@bondar.de"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "bondarde/php-colors": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "BondarDe\\Maps\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    }
+}
